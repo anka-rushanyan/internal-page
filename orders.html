@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <title></title>
+    <link rel="shortcut icon" href="images/"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body class="internal orders-page">
+<header class="header">
+    <div class="container-fluid wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <h1 class="navbar-brand">
+                <a  href="#" class=" d-inline-block" title="jrnl">
+                    <img src="images/river-logo.png" alt="logo">
+                </a>
+            </h1>
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item order-md-0 order-4 active">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/analytics.png" alt="Icon" class="db m-auto">Orders Explorer
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/keyword.png" alt="Icon" class="db m-auto">Keyword Planner
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/settings.png" alt="Icon" class="db m-auto">Keyword Tool
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/tracker.png" alt="Icon" class="db m-auto">Keyword Tracker
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/landing.png" alt="Icon" class="db m-auto">Landing Page Editor
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/refund.png" alt="Icon" class="db">Refunds
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/coupon.png" alt="Icon" class="db m-auto">Coupon Distribution
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/mail.png" alt="Icon" class="db m-auto">Email Followup
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-title dropdown-toggle fs-16 c-black font-semibold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Landing Page Editor</a>
+                            <a class="dropdown-item" href="#">Refunds</a>
+                            <a class="dropdown-item" href="#">Coupon Distribution</a>
+                            <a class="dropdown-item" href="#">Email Followup</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="line"></div>
+                    </li>
+                    <li class="nav-item order-md-4 order-0 dropdown-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Marine
+                            <span class="caret mr-1"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-line">
+                                <img src="images/dashboard.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Dashboard</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/users.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Users Profile</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/question.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Help</a>
+                            </li>
+                            <li class="drop-line"></li>
+                            <li class="dropdown-line">
+                                <img src="images/logout.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="main-sec">
+        <div class="container-fluid wrapper">
+            <div class="main-sec-top">
+                <p class="main-title font-medium">Orders Explorer</p>
+                <a href="#" class="title-video">
+                    <img src="images/video-player.png" class="mr-2" alt="">How to Video</a>
+            </div>
+            <div class="main-box">
+                <div class="main-box-top">
+                    <div></div>
+                    <div class="dropdown-color">
+                        <div class="nav-item order-md-4 order-0 dropdown dropdown-3">
+                            <div class="drop-red"></div>
+                            <a class="nav-link dropdown-toggle d-flex align-items-center united" href="#" data-toggle="dropdown">B07KCGPYSP
+                                <span class="caret mr-1"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-item order-md-4 order-0 dropdown dropdown-3">
+                            <div class="drop-orange"></div>
+                            <a class="nav-link dropdown-toggle d-flex align-items-center united" href="#" data-toggle="dropdown">B07KCGPYSP
+                                <span class="caret mr-1"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-item order-md-4 order-0 dropdown dropdown-3">
+                            <div class="drop-green"></div>
+                            <a class="nav-link dropdown-toggle d-flex align-items-center united" href="#" data-toggle="dropdown">B07KCGPYSP
+                                <span class="caret mr-1"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-calendar">
+                        <ul class="list-inline list-unstyled text-center river-cleaner">
+                            <li class="list-inline-item buttons-li calendar-1">
+                                <a href="#" class="btn united">2020-03-07</a>
+                                <img src="images/black-calendar.png" alt="" class="calendar-icon">
+                            </li>
+                        </ul>
+                        <ul class="list-inline list-unstyled text-center river-cleaner">
+                            <li class="list-inline-item buttons-li calendar-1">
+                                <a href="#" class="btn united">2020-06-07</a>
+                                <img src="images/black-calendar.png" alt="" class="calendar-icon">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="images/chart.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="main-sec-2 bg-darkblue">
+        <div class="container-fluid wrapper">
+            <div class="main-box-2">
+                <div class="mb-5">
+                    <p class="blue-box-title">Shipping Data</p>
+                    <div class="orange-box">
+                        <div class="orange-title font-medium">
+                            <p>Shipped</p>
+                        </div>
+                        <p class="white-text">456</p>
+                    </div>
+                    <div class="orange-box">
+                        <div class="purple-title font-medium">
+                            <p>Pending</p>
+                        </div>
+                        <p class="white-text">0</p>
+                    </div>
+                    <div class="orange-box">
+                        <div class="blue-title font-medium">
+                            <p>Cancelled</p>
+                        </div>
+                        <p class="white-text">0</p>
+                    </div>
+                    <div class="orange-box">
+                        <div class="light-blue-title">
+                            <p>Delivered</p>
+                        </div>
+                        <p class="white-text">0</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="blue-box-title">Sales</p>
+                    <div class="big-box">
+                        <div class="shine-blue-title font-medium">
+                            <img src="images/white-calendar.png" alt="" class="mr-2">
+                            <p>Today</p>
+                        </div>
+                        <p class="white-text">0 Sales</p>
+                        <p class="green-text">$0 Profit</p>
+                    </div>
+                    <div class="big-box">
+                        <div class="pink-title font-medium">
+                            <img src="images/white-calendar.png" alt="" class="mr-2">
+                            <p>Yesterday</p>
+                        </div>
+                        <p class="white-text">0 Sales</p>
+                        <p class="green-text">$0 Profit</p>
+                    </div>
+                    <div class="big-box">
+                        <div class="aqua-title font-medium">
+                            <img src="images/white-calendar.png" alt="" class="mr-2">
+                            <p>Last 30 Days</p>
+                        </div>
+                        <p class="white-text">0 Sales</p>
+                        <p class="green-text">$0 Profit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-sec-3">
+        <div class="container-fluid wrapper">
+            <div class="orange-sec">
+                <div class="d-inline-block position-relative w-100">
+                    <div class="pr dinit">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="Search" class="search-2" id="search-2">
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+            <table class="product-table">
+                <tr class="table-top">
+                    <th class="table-th"><img src="images/arrows.png" alt="" class="mr-2">Order Number</th>
+                    <th class="table-th"><img src="images/arrows.png" alt="" class="mr-2">Asin</th>
+                    <th class="table-th"><img src="images/arrows.png" alt="" class="mr-2">Product Name</th>
+                    <th class="table-th"><img src="images/arrows.png" alt="" class="mr-2">Status</th>
+                    <th class="table-th"><img src="images/arrow-up.png" alt="" class="mr-2 mb-2">Shipping</th>
+                    <th class="table-th"><img src="images/arrows.png" alt="" class="mr-2">Date</th>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <tr>
+                    <td class="table-td"><a href="#">111-0001383-5439447</a></td>
+                    <td class="table-td">B07KCGPYSP</td>
+                    <td class="table-td">Secure Travel Password Manager Book with Alphabetical Tabs</td>
+                    <td class="table-td">Shipped</td>
+                    <td class="table-td">SecondDay</td>
+                    <td class="table-td">2020-02-07</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td class="td-bottom">Showing 1 to 25 of 550 entries</td>-->
+                    <!--<td class="td-bottom"></td>-->
+                    <!--<td class="td-bottom"></td>-->
+                    <!--<td class="td-bottom"></td>-->
+                    <!--<td class="td-bottom"></td>-->
+                    <!--<td class="td-bottom">Previous 1 2 3 4 5 ... 11 Next</td>-->
+                <!--</tr>-->
+            </table>
+            </div>
+            <div class="table-bottom">
+                <p>Showing 1 to 25 of 550 entries</p>
+                <p>Previous 1 2 3 4 5 ... 11 Next</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <p class="font-light text-center mb-0 footer-txt">Copyright 2019 - River Cleaner - the Amazon Listing Optimizer - All Rights Reserved</p>
+        </div>
+    </footer>
+
+</main>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <title></title>
+    <link rel="shortcut icon" href="images/"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body class="internal refunds">
+<header class="header">
+    <div class="container-fluid wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <h1 class="navbar-brand">
+                <a  href="#" class=" d-inline-block" title="jrnl">
+                    <img src="images/river-logo.png" alt="logo">
+                </a>
+            </h1>
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item order-md-0 order-4">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/analytics.png" alt="Icon" class="db m-auto">Orders Explorer
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/keyword.png" alt="Icon" class="db m-auto">Keyword Planner
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/settings.png" alt="Icon" class="db m-auto">Keyword Tool
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/tracker.png" alt="Icon" class="db m-auto">Keyword Tracker
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/landing.png" alt="Icon" class="db m-auto">Landing Page Editor
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2 active">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/refund.png" alt="Icon" class="db m-auto">Refunds
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/coupon.png" alt="Icon" class="db m-auto">Coupon Distribution
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/mail.png" alt="Icon" class="db m-auto">Email Followup
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-title dropdown-toggle fs-16 c-black font-semibold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Landing Page Editor</a>
+                            <a class="dropdown-item" href="#">Refunds</a>
+                            <a class="dropdown-item" href="#">Coupon Distribution</a>
+                            <a class="dropdown-item" href="#">Email Followup</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="line"></div>
+                    </li>
+                    <li class="nav-item order-md-4 order-0 dropdown-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Marine
+                            <span class="caret mr-1"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-line">
+                                <img src="images/dashboard.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Dashboard</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/users.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Users Profile</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/question.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Help</a>
+                            </li>
+                            <li class="drop-line"></li>
+                            <li class="dropdown-line">
+                                <img src="images/logout.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="main-sec">
+        <div class="container-fluid wrapper">
+            <div class="row mb-4">
+                <div class="col-2">
+                    <p class="main-title mb-0 font-medium">Refunds</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p class="main-title-center mb-0 font-light">Greetings test_wf, based on your generated reports, Amazon owes you <strong class="font-medium">$1252.16</strong></p>
+                </div>
+            </div>
+            <div class="top-line">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active top-line-txt " data-toggle="tab" href="#home">
+                            <img src="images/upload.png" alt="" class="mr-1">
+                            <span>Upload Files</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link top-line-txt" data-toggle="tab" href="#menu1">
+                            <img src="images/surface.png" alt="" class="mr-1">
+                            <span>Uploaded Reports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link top-line-txt" data-toggle="tab" href="#menu2">
+                            <img src="images/full.png" alt="" class="mr-1">
+                            <span>Inventory Case Probabilities</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link top-line-txt" data-toggle="tab" href="#menu3">
+                            <img src="images/order.png" alt="" class="mr-1">
+                            <span>Order Case Probabilities</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="home" class="tab-pane active"><br>
+                    <div class="dark-sec">
+                        <p>Upload Reports</p>
+                    </div>
+                    <div class="middle-white">
+                        <ul class="list-inline list-unstyled text-center river-cleaner">
+                            <li class="list-inline-item buttons-li business-btns">
+                                <a href="#" class="btn btn-blue">Generate Report</a>
+                            </li>
+                        </ul>
+                        <p class="file-text font-bold">Transaction File</p>
+                        <div class="drag-drop-upload">
+                            <img src="images/upload-gray.png" alt="">
+                            <div class="drag-upload">
+                                <span class="mr-1">Drag file here or</span>
+                                <div class="btn-upload-block">
+                                    <input type="file" name="photo-upload" id="uploadImg1" class="d-none">
+                                    <label for="uploadImg1" class="btn-img btn-img-upload mb-0">
+                                        <span class="btn-text">Browse file</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-inline list-unstyled text-center river-cleaner">
+                            <li class="list-inline-item buttons-li business-btns">
+                                <a href="#" class="btn btn-orange">Process Report</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="menu1" class="tab-pane fade"><br>
+                    <div>
+                        <ul class="checkboxes">
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box" name="show" checked="">
+                                    <label for="show-stack-box" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Inventory Adjustment Details</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box-2" name="show" checked="">
+                                    <label for="show-stack-box-2" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Reimbursement Details</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box-3" name="show" checked="">
+                                    <label for="show-stack-box-3" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Customer Returns Order Details</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box-4" name="show" checked="">
+                                    <label for="show-stack-box-4" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Transaction Details</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dark-sec">
+                        <p>Inventory Adjustment Details</p>
+                    </div>
+                    <div class="scroll-vertical project-scroll-table-5" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <div class="project-scroll-table-5">
+                                <table class="right-table">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2"></th>
+                                        <th class="table-th-2">#</th>
+                                        <th class="table-th-2">Adjusted Date</th>
+                                        <th class="table-th-2">Transaction Item ID</th>
+                                        <th class="table-th-2">FNSKU</th>
+                                        <th class="table-th-2">SKU</th>
+                                        <th class="table-th-2">Product Name</th>
+                                        <th class="table-th-2">Fulfillment Center ID</th>
+                                        <th class="table-th-2">Quantity</th>
+                                        <th class="table-th-2">Reason</th>
+                                        <th class="table-th-2">Disposition</th>
+                                        <th class="table-th-2">Created At</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 p-0">
+                                            <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                        </td>
+                                        <td class="table-td-2">
+                                           1
+                                        </td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">2019-07-12<span>07:00:00</span></div>
+                                        </td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">5I-R1WH-BH5L</td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">Secure Password Book with Tabs<span>(Soft Cover)</span></div>
+                                        </td>
+                                        <td class="table-td-2">AVP1</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">M</td>
+                                        <td class="table-td-2">SELLABLE</td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">2019-08-06<span>06:23:16</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 p-0">
+                                            <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                        </td>
+                                        <td class="table-td-2">
+                                            1
+                                        </td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">2019-07-12<span>07:00:00</span></div>
+                                        </td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">5I-R1WH-BH5L</td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">Secure Password Book with Tabs<span>(Soft Cover)</span></div>
+                                        </td>
+                                        <td class="table-td-2">AVP1</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">M</td>
+                                        <td class="table-td-2">SELLABLE</td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">2019-08-06<span>06:23:16</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 p-0">
+                                            <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                        </td>
+                                        <td class="table-td-2">
+                                            1
+                                        </td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">2019-07-12<span>07:00:00</span></div>
+                                        </td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">5I-R1WH-BH5L</td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">Secure Password Book with Tabs<span>(Soft Cover)</span></div>
+                                        </td>
+                                        <td class="table-td-2">AVP1</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">M</td>
+                                        <td class="table-td-2">SELLABLE</td>
+                                        <td class="table-td-2 align-bottom">
+                                            <div class="date-text">2019-08-06<span>06:23:16</span></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-bottom">
+                        <p>Showing 1 to 25 of 550 entries</p>
+                        <p>Previous 1 2 3 4 5 ... 11 Next</p>
+                    </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                        <div class="aqua-sec">
+                            <p>Reimbursement Details</p>
+                        </div>
+                        <div class="scroll-vertical project-scroll-table-5" data-mcs-theme="dark">
+                            <div class="table-responsive">
+                                <div class="project-scroll-table-5">
+                                    <table class="right-table">
+                                        <tr class="table-top-2">
+                                            <th class="table-th-2"></th>
+                                            <th class="table-th-2">#</th>
+                                            <th class="table-th-2">Order ID</th>
+                                            <th class="table-th-2">Reimburse ID</th>
+                                            <th class="table-th-2">Case ID</th>
+                                            <th class="table-th-2">Reason</th>
+                                            <th class="table-th-2">SKU</th>
+                                            <th class="table-th-2">FNSKU</th>
+                                            <th class="table-th-2">ASIN</th>
+                                            <th class="table-th-2">Product Name</th>
+                                            <th class="table-th-2 text-right">Condition</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-td-2 p-0">
+                                                <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                            </td>
+                                            <td class="table-td-2">
+                                                1
+                                            </td>
+                                            <td class="table-td-2">12.12.21</td>
+                                            <td class="table-td-2">123568984</td>
+                                            <td class="table-td-2">123568984</td>
+                                            <td class="table-td-2">150</td>
+                                            <td class="table-td-2">150</td>
+                                            <td class="table-td-2">12267</td>
+                                            <td class="table-td-2">12267</td>
+                                            <td class="table-td-2">Kopo</td>
+                                            <td class="table-td-2 text-right">50</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-bottom">
+                            <p>Showing 1 to 25 of 550 entries</p>
+                            <p>Previous 1 2 3 4 5 ... 11 Next</p>
+                        </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                    <div class="pink-sec">
+                        <p>Customer Returns Order Details</p>
+                    </div>
+                        <div class="table-responsive">
+                                <table class="right-table border-0">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2">#</th>
+                                        <th class="table-th-2">Order ID</th>
+                                        <th class="table-th-2">SKU</th>
+                                        <th class="table-th-2">ASIN</th>
+                                        <th class="table-th-2">FNSKU</th>
+                                        <th class="table-th-2">Product Name</th>
+                                        <th class="table-th-2">Quantity</th>
+                                        <th class="table-th-2">Fulfillment Center ID</th>
+                                    </tr>
+                                    <tr class="bgc-white">
+                                        <td colspan="8" class="py-35">
+                                            <div class="pink-text">
+                                                <p class="mb-0">No Data Available in table</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                    <div class="light-blue-sec">
+                        <p>Transaction Details</p>
+                    </div>
+                    <div class="scroll-vertical project-scroll-table-7" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <div class="project-scroll-table-7">
+                                <table class="right-table">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2"></th>
+                                        <th class="table-th-2">#</th>
+                                        <th class="table-th-2">Data/Time</th>
+                                        <th class="table-th-2">Settlement ID</th>
+                                        <th class="table-th-2">Type</th>
+                                        <th class="table-th-2">Order ID</th>
+                                        <th class="table-th-2">SKU</th>
+                                        <th class="table-th-2">Description</th>
+                                        <th class="table-th-2">Quantity</th>
+                                        <th class="table-th-2">Marketplace</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 p-0">
+                                            <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                        </td>
+                                        <td class="table-td-2">
+                                            1
+                                        </td>
+                                        <td class="table-td-2">Jun 1, 2019 12:13:20 AM PDT</td>
+                                        <td class="table-td-2">11888199981</td>
+                                        <td class="table-td-2">Order</td>
+                                        <td class="table-td-2">111-4455809-7260200</td>
+                                        <td class="table-td-2">T-315HP</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 p-0">
+                                            <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                        </td>
+                                        <td class="table-td-2">
+                                            2
+                                        </td>
+                                        <td class="table-td-2">Jun 1, 2019 12:13:20 AM PDT</td>
+                                        <td class="table-td-2">11888199981</td>
+                                        <td class="table-td-2">Order</td>
+                                        <td class="table-td-2">111-4455809-7260200</td>
+                                        <td class="table-td-2">T-315HP</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 p-0">
+                                            <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                        </td>
+                                        <td class="table-td-2">
+                                            3
+                                        </td>
+                                        <td class="table-td-2">Jun 1, 2019 12:13:20 AM PDT</td>
+                                        <td class="table-td-2">11888199981</td>
+                                        <td class="table-td-2">Order</td>
+                                        <td class="table-td-2">111-4455809-7260200</td>
+                                        <td class="table-td-2">T-315HP</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 p-0">
+                                            <img src="images/support.png" alt="" data-toggle="modal" data-target="#exampleModal">
+                                        </td>
+                                        <td class="table-td-2">
+                                            4
+                                        </td>
+                                        <td class="table-td-2">Jun 1, 2019 12:13:20 AM PDT</td>
+                                        <td class="table-td-2">11888199981</td>
+                                        <td class="table-td-2">Order</td>
+                                        <td class="table-td-2">111-4455809-7260200</td>
+                                        <td class="table-td-2">T-315HP</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                        <td class="table-td-2">-</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-bottom">
+                        <p>Showing 1 to 25 of 550 entries</p>
+                        <p>Previous 1 2 3 4 5 ... 11 Next</p>
+                    </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                    </div>
+
+                <div id="menu2" class="tab-pane fade"><br>
+                    <div>
+                        <ul class="checkboxes">
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box-5" name="show" checked="">
+                                    <label for="show-stack-box-5" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Lost Inventory</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box-6" name="show" checked="">
+                                    <label for="show-stack-box-6" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Damaged in Werehouse</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dark-sec">
+                        <p>Lost Inventory</p>
+                    </div>
+                    <div class="orange-sec">
+                        <div class="d-flex align-items-center justify-content-sm-between position-relative w-100 lost-inventory">
+                            <div class="pr dinit search-box">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" placeholder="Search" class="search-2" id="search-2">
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <ul class="list-inline list-unstyled river-cleaner mb-0">
+                                    <li class="list-inline-item buttons-li business-btns">
+                                        <img src="images/surface-white.png" alt="" class="surface-icon">
+                                        <a href="#" class="btn btn-blue-2">Downloade CSV File</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-vertical project-scroll-table-8" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <div class="project-scroll-table-8">
+                                <table class="right-table">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2 text-left"><img src="images/arrows.png" alt="" class="mr-2">FNSKU</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">SKU</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Product Name</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Fulfillment ID</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">LostQty</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">FoundQty</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">NeedsReimbursement</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">saad</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">45</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">saad</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">45</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">saad</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">45</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-bottom">
+                        <p>Showing 1 to 25 of 550 entries</p>
+                        <p>Previous 1 2 3 4 5 ... 11 Next</p>
+                    </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                    <div class="purple-sec-2">
+                        <p>Damaged in Werehouse</p>
+                    </div>
+                    <div class="orange-sec">
+                        <div class="d-flex align-items-center justify-content-sm-between position-relative w-100 lost-inventory-3">
+                            <div class="pr dinit search-box">
+                                <i class="fas fa-search search-icon-2"></i>
+                                <input type="text" placeholder="Search" class="search-3" id="search-3">
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <ul class="list-inline list-unstyled river-cleaner mb-0">
+                                    <li class="list-inline-item buttons-li business-btns">
+                                        <img src="images/surface-white.png" alt="" class="surface-icon-2">
+                                        <a href="#" class="btn btn-blue-2">Downloade CSV File</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-vertical project-scroll-table-8" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <div class="project-scroll-table-8">
+                                <table class="right-table">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2 text-left"><img src="images/arrows.png" alt="" class="mr-2">FNSKU</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">SKU</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Product Name</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Fulfillment ID</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">LostQty</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">FoundQty</th>
+                                        <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">NeedsReimbursement</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">saad</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">45</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">saad</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">45</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">saad</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                        <td class="table-td-2">-1</td>
+                                        <td class="table-td-2">45</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-bottom">
+                        <p>Showing 1 to 25 of 550 entries</p>
+                        <p>Previous 1 2 3 4 5 ... 11 Next</p>
+                    </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                </div>
+                <div id="menu3" class="tab-pane fade"><br>
+                    <div>
+                        <ul class="checkboxes">
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box-check" name="show" checked="">
+                                    <label for="show-stack-box-check" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Not Returned to the Warehouse</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-box position-relative mr-5">
+                                    <input type="checkbox" id="show-stack-box-check-2" name="show" checked="">
+                                    <label for="show-stack-box-check-2" class="font-medium"><span class="check">
+                                        <i class="fas fa-check"></i></span> Return over 30 Days</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dark-sec">
+                        <p>Not Returned to the Warehouse</p>
+                    </div>
+                    <div class="orange-sec">
+                        <div class="d-flex align-items-center justify-content-sm-between position-relative w-100 lost-inventory-2">
+                            <div class="d-flex align-items-center show-entries">
+                                <p class="show-ent mr-3">Show</p>
+                                <div class="nav-item  dropdown dropdown-5">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center select-class-3" href="#" data-toggle="dropdown" aria-expanded="false">10
+                                        <span class="caret mr-2"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(3px, 33px, 0px);">
+                                        <li>
+                                            <a href="#">Text</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Text</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="show-ent ml-3">entries</p>
+                            </div>
+                            <div class="pr dinit search-box-2">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" placeholder="Search" class="search-2" id="search-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-vertical project-scroll-table-8" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <div class="project-scroll-table-8">
+                                <table class="right-table">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2 text-left">Total Orders</th>
+                                        <th class="table-th-2">Total Amount</th>
+                                        <th class="table-th-2">Generated</th>
+                                        <th class="table-th-2">Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">120</td>
+                                        <td class="table-td-2">120</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">120</td>
+                                        <td class="table-td-2">120</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">120</td>
+                                        <td class="table-td-2">120</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-bottom">
+                        <p>Showing 1 to 25 of 550 entries</p>
+                        <p>Previous 1 2 3 4 5 ... 11 Next</p>
+                    </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                    <div class="dark-blue-sec">
+                        <p>Not Returned to the Warehouse</p>
+                    </div>
+                    <div class="orange-sec">
+                        <div class="d-flex align-items-center justify-content-sm-between position-relative w-100 lost-inventory-2">
+                            <div class="d-flex align-items-center show-entries">
+                                <p class="show-ent mr-3">Show</p>
+                                <div class="nav-item dropdown dropdown-5">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center select-class-3" href="#" data-toggle="dropdown" aria-expanded="false">10
+                                        <span class="caret mr-2"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(3px, 33px, 0px);">
+                                        <li>
+                                            <a href="#">Text</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Text</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="show-ent ml-3">entries</p>
+                            </div>
+                            <div class="pr dinit search-box-2">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" placeholder="Search" class="search-2" id="search-5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-vertical project-scroll-table-8" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <div class="project-scroll-table-8">
+                                <table class="right-table">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2 text-left">Total Orders</th>
+                                        <th class="table-th-2">Total Amount</th>
+                                        <th class="table-th-2">Generated</th>
+                                        <th class="table-th-2">Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">120</td>
+                                        <td class="table-td-2">120</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">120</td>
+                                        <td class="table-td-2">120</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2 text-left">120</td>
+                                        <td class="table-td-2">120</td>
+                                        <td class="table-td-2">X0027OXC0D</td>
+                                        <td class="table-td-2">117734521063</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-bottom">
+                        <p>Showing 1 to 25 of 550 entries</p>
+                        <p>Previous 1 2 3 4 5 ... 11 Next</p>
+                    </div>
+                    <div class="table-bottom-2">
+                        <img src="images/big-arrow-up.png" alt="" class="center-arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <p class="font-light text-center mb-0 footer-txt">Copyright 2019 - River Cleaner - the Amazon Listing Optimizer - All Rights Reserved</p>
+        </div>
+    </footer>
+</main>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Secure Password Book with Tabs (Soft Cover)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="modal-table">
+                    <tbody>
+                        <tr class="tr-modal">
+                            <td class="td-title font-medium">Quantity Reimbursed Cash</td>
+                            <td>49.00</td>
+                        </tr>
+                        <tr class="tr-modal">
+                            <td class="td-title font-medium">Quantity Reimbursed reimbursement</td>
+                            <td>00.00</td>
+                        </tr>
+                        <tr class="tr-modal">
+                            <td class="td-title font-medium">Quantity Reimbursed Total</td>
+                            <td>49.00</td>
+                        </tr>
+                        <tr class="tr-modal">
+                            <td class="td-title font-medium">Original Reimbursement ID</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr-modal">
+                            <td class="td-title font-medium">Original Reimbursement Type</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr-modal">
+                            <td class="td-title font-medium">Approval Date</td>
+                            <td>2019-07-20 07:06:22</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title font-medium">Created Date</td>
+                            <td>2019-08-06 06:23:17</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary-3">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".scroll-vertical").mCustomScrollbar();
+    });
+</script>
+</body>
+</html>

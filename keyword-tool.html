@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <title></title>
+    <link rel="shortcut icon" href="images/"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body class="internal keyword-tool">
+<header class="header">
+    <div class="container-fluid wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <h1 class="navbar-brand">
+                <a  href="#" class=" d-inline-block" title="jrnl">
+                    <img src="images/river-logo.png" alt="logo">
+                </a>
+            </h1>
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item order-md-0 order-4">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/analytics.png" alt="Icon" class="db m-auto">Orders Explorer
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/keyword.png" alt="Icon" class="db m-auto">Keyword Planner
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/settings.png" alt="Icon" class="db m-auto">Keyword Tool
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/tracker.png" alt="Icon" class="db m-auto">Keyword Tracker
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/landing.png" alt="Icon" class="db m-auto">Landing Page Editor
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/refund.png" alt="Icon" class="db m-auto">Refunds
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/coupon.png" alt="Icon" class="db m-auto">Coupon Distribution
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/mail.png" alt="Icon" class="db m-auto">Email Followup
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-title dropdown-toggle fs-16 c-black font-semibold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Landing Page Editor</a>
+                            <a class="dropdown-item" href="#">Refunds</a>
+                            <a class="dropdown-item" href="#">Coupon Distribution</a>
+                            <a class="dropdown-item" href="#">Email Followup</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="line"></div>
+                    </li>
+                    <li class="nav-item order-md-4 order-0 dropdown-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Marine
+                            <span class="caret mr-1"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-line">
+                                <img src="images/dashboard.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Dashboard</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/users.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Users Profile</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/question.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Help</a>
+                            </li>
+                            <li class="drop-line"></li>
+                            <li class="dropdown-line">
+                                <img src="images/logout.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="main-sec">
+        <div class="container-fluid wrapper">
+            <div class="main-sec-top">
+                <p class="main-title font-medium">Keyword Tool</p>
+                <a href="#" class="title-video">
+                    <img src="images/video-player.png" class="mr-2" alt="">How to Video</a>
+            </div>
+            <div class="row">
+                <div class="col-custom-3 col-lg-3 col-12 mb-4">
+                    <div class="black-box-keyword mr-0">
+                        <div class="black-title-left">
+                            <p>KEYWORD SEARCH & REVERSE ASIN</p>
+                        </div>
+                        <div class="main-div">
+                            <div class="main-res">
+                                <div class="d-flex">
+                                    <p class="white-text active">Keyword</p>
+                                    <p class="white-text">LSI</p>
+                                    <p class="white-text">Suggestions</p>
+                                    <p class="white-text">Asin</p>
+                                </div>
+                                <div class="black-white-box">
+                                    <p>Teeter hang up</p>
+                                </div>
+                            </div>
+                            <div class="black-white-box-2">
+                                <div class="nav-item order-md-4 order-0 dropdown dropdown-4">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center select-class" href="#" data-toggle="dropdown">Select TM Nice Class
+                                        <span class="caret mr-5"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Text</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Text</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="black-box-txt">
+                                    <ul>
+                                        <li>
+                                            <p class="bc-box-text">1. Chemicals</p>
+                                        </li>
+                                        <li>
+                                            <p class="bc-box-text">2. Paints</p>
+                                        </li>
+                                        <li>
+                                            <p class="bc-box-text">3. Cosmetics and cleaning preparations</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="total-div">
+                                <img src="images/very-hard.png" alt="" class="db hard-img">
+                                <div class="total-price">
+                                    <p>Total Exact Volume: <span style="color: #757575;">11,862</span></p>
+                                    <p>Total Keyword count: <span style="color: #757575;">1</span></p>
+                                    <p class="font-bold">Average Keyword Difficulty <img src="images/search-icon.png" class="ml-1" alt=""></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-custom-9 col-lg-9 mb-4">
+                    <div class="bgc-lwhite">
+                        <div class="orange-table">
+                            <div class="d-flex justify-content-sm-between search-volume">
+                                <div class="d-flex align-items-center mr-4">
+                                    <p class="orange-head">Search volume:</p>
+                                    <ul class="d-flex">
+                                        <li class="min-max mr-2">Min</li>
+                                        <li class="min-max">Max</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center mr-1">
+                                    <p class="orange-head">Keyword length:</p>
+                                    <ul class="d-flex">
+                                        <li class="min-max mr-2">Min</li>
+                                        <li class="min-max">Max</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center mr-1">
+                                    <p class="orange-head">Competing:</p>
+                                    <ul class="d-flex">
+                                        <li class="min-max mr-2">Min</li>
+                                        <li class="min-max ">Max</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center mr-1">
+                                    <p class="orange-head">Reviews:</p>
+                                    <ul class="d-flex">
+                                        <li class="min-max mr-2">Min</li>
+                                        <li class="min-max ">Max</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between w-100 key-check">
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword" name="keyword" checked="checked">
+                                        <label for="keyword" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Keyword</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-2" name="keyword" checked="checked">
+                                        <label for="keyword-2" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Clicks</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-3" name="keyword" checked="checked">
+                                        <label for="keyword-3" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> ATC</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-4" name="keyword" checked="checked">
+                                        <label for="keyword-4" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Purchase</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-5" name="keyword" checked="checked">
+                                        <label for="keyword-5" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> KD</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-6" name="keyword" checked="checked">
+                                        <label for="keyword-6" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> SFR</label>
+                                    </div>
+                                    <div class="check-box position-relative check-line">
+                                        <input type="checkbox" id="keyword-7" name="keyword" checked="checked">
+                                        <label for="keyword-7" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Exact</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-8" name="keyword" checked="checked">
+                                        <label for="keyword-8" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Broad</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-9" name="keyword" checked="checked">
+                                        <label for="keyword-9" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Competing</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-10" name="keyword" checked="checked">
+                                        <label for="keyword-10" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Reviews</label>
+                                    </div>
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="keyword-11" name="keyword" checked="checked">
+                                        <label for="keyword-11" class="font-medium"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Trend</label>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="scroll-vertical project-scroll-table-2" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <table class="right-table">
+                                <tr class="table-top-2">
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Keyword</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Clicks</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">ATC</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Purchase</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">KD</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">SFR</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Exact</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Broad</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Competing</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Reviews</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Trend</th>
+                                </tr>
+                                <tr>
+                                    <td class="table-td-2"><a href="#">Teeter hang up</a></td>
+                                    <td class="table-td-2">30.03%</td>
+                                    <td class="table-td-2">30.03%</td>
+                                    <td class="table-td-2">30.03%</td>
+                                    <td class="table-td-2"><div class="kd-green">100</div></td>
+                                    <td class="table-td-2">150</td>
+                                    <td class="table-td-2">150</td>
+                                    <td class="table-td-2">95,231</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-td-2"><a href="#">Teeter hang up</a></td>
+                                    <td class="table-td-2"></td>
+                                    <td class="table-td-2"></td>
+                                    <td class="table-td-2"></td>
+                                    <td class="table-td-2"><div class="kd-green">100</div></td>
+                                    <td class="table-td-2">520</td>
+                                    <td class="table-td-2">520</td>
+                                    <td class="table-td-2">95,231</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-td-2"><a href="#">Teeter hang up</a></td>
+                                    <td class="table-td-2"></td>
+                                    <td class="table-td-2"></td>
+                                    <td class="table-td-2"></td>
+                                    <td class="table-td-2"><div class="kd-green">100</div></td>
+                                    <td class="table-td-2">560</td>
+                                    <td class="table-td-2">560</td>
+                                    <td class="table-td-2">95,231</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                        <div class="table-footer font-medium">
+                            <p class="mb-0">*Drag your preferred product to the bottom column</p>
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-12">
+                    <div class="h-100 bgc-lwhite">
+                        <div class="dblue-sec"><p>Planner Overview</p></div>
+                        <div class="orange-sec-2">
+                            <div class="d-flex align-items-center justify-content-sm-between position-relative w-100 bottom-sec-4">
+                                <!--<img src="images/table-group.png" alt="">-->
+                                <div class="d-flex align-items-center start-img">
+                                    <div class="check-box position-relative">
+                                        <input type="checkbox" id="show-stack-box-6" name="all">
+                                        <label for="show-stack-box-6"><span class="check">
+                                                <i class="fas fa-check"></i></span>
+                                        </label>
+                                    </div>
+                                    <img src="images/trash-white.png" class="delete-icon-3">
+                                    <img src="images/refresh.png" alt="">
+                                </div>
+                                <ul class="list-inline list-unstyled text-center river-cleaner d-flex mb-0 new-drop">
+                                    <li>
+                                        <div class="nav-item  dropdown dropdown-5">
+                                            <a class="nav-link dropdown-toggle d-flex align-items-center select-class-2" href="#" data-toggle="dropdown">New
+                                                <span class="caret mr-80"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#">Text</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Text</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item buttons-li green-add">
+                                        <a href="#" class="btn new-project">Add New Project</a>
+                                        <img src="images/add.png" alt="" class="add-icon">
+                                    </li>
+                                    <li class="list-inline-item buttons-li blue-btn">
+                                        <a href="#" class="btn save-btn">Save</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="scroll-vertical project-scroll-table-3" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                            <table class="right-table">
+                                <tr class="table-top-2">
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Keyword</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Clicks</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">ATC</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Purchase</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">KD</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">SFR</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Exact</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Broad</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Competing</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Reviews</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Trend</th>
+                                </tr>
+                                <tr>
+                                    <td class="table-td-2">
+                                        <div class="check-box position-relative">
+                                            <input type="checkbox" id="show-stack-box-2" name="show">
+                                            <label for="show-stack-box-2" style="color: #2E82BC;"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Teeter hang up</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-td-2">30.03%</td>
+                                    <td class="table-td-2">30.03%</td>
+                                    <td class="table-td-2">30.03%</td>
+                                    <td class="table-td-2"><div class="kd-green">100</div></td>
+                                    <td class="table-td-2">150</td>
+                                    <td class="table-td-2">150</td>
+                                    <td class="table-td-2">95,231</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                    <td class="table-td-2">50</td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-12 bottom-box">
+                    <div class="black-box-right-2 mr-0">
+                        <div class="black-title-left-2">
+                            <p>Most Repeated</p>
+                        </div>
+                        <ul>
+                            <li class="right-box-1">
+                                <p class="white-text-4">1. Teeter</p>
+                                <div>
+                                    <img src="images/copy.png" alt="" class="mCS_img_loaded mr-1">
+                                    <img src="images/trash.png" alt="">
+                                </div>
+
+                            </li>
+                            <li class="right-box-1">
+                                <p class="white-text-4">2. Inversion </p>
+                                <div>
+                                    <img src="images/copy.png" alt="" class="mCS_img_loaded mr-1">
+                                    <img src="images/trash.png" alt="">
+                                </div>
+                            </li>
+                            <li class="right-box-1">
+                                <p class="white-text-4">3. Table </p>
+                                <div>
+                                    <img src="images/copy.png" alt="" class="mCS_img_loaded mr-1">
+                                    <img src="images/trash.png"  alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="black-box-right-2 mr-0">
+                        <div class="black-title-left-2">
+                            <p>Unique keywords</p>
+                        </div>
+                        <p class="white-text-5">350 hang up totter hangups tables for back pain with heat and massage ibs capacity foldable yoga bench</p>
+                        <img src="images/trash.png" alt="" class="trash-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <p class="font-light text-center mb-0 footer-txt">Copyright 2019 - River Cleaner - the Amazon Listing Optimizer - All Rights Reserved</p>
+        </div>
+    </footer>
+</main>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".scroll-vertical").mCustomScrollbar();
+    });
+</script>
+</body>
+</html>

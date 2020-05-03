@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <title></title>
+    <link rel="shortcut icon" href="images/"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body class="internal keyword-tracer landing-page">
+<header class="header">
+    <div class="container-fluid wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <h1 class="navbar-brand">
+                <a  href="#" class=" d-inline-block" title="jrnl">
+                    <img src="images/river-logo.png" alt="logo">
+                </a>
+            </h1>
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item order-md-0 order-4">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/analytics.png" alt="Icon" class="db m-auto">Orders Explorer
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/keyword.png" alt="Icon" class="db m-auto">Keyword Planner
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/settings.png" alt="Icon" class="db m-auto">Keyword Tool
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/tracker.png" alt="Icon" class="db m-auto">Keyword Tracker
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2 active">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/landing-white.png" alt="Icon" class="db m-auto">Landing Page Editor
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/refund.png" alt="Icon" class="db m-auto">Refunds
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/coupon.png" alt="Icon" class="db m-auto">Coupon Distribution
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/mail.png" alt="Icon" class="db m-auto">Email Followup
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-title dropdown-toggle fs-16 c-black font-semibold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Landing Page Editor</a>
+                            <a class="dropdown-item" href="#">Refunds</a>
+                            <a class="dropdown-item" href="#">Coupon Distribution</a>
+                            <a class="dropdown-item" href="#">Email Followup</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="line"></div>
+                    </li>
+                    <li class="nav-item order-md-4 order-0 dropdown-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Marine
+                            <span class="caret mr-1"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-line">
+                                <img src="images/dashboard.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Dashboard</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/users.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Users Profile</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/question.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Help</a>
+                            </li>
+                            <li class="drop-line"></li>
+                            <li class="dropdown-line">
+                                <img src="images/logout.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-regular" id="exampleModalLabel">Enter Keywords or Phrases Separated by a Comma</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close.png" alt="">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-box">
+                        <p class="modal-text">Example: IPhone 6, Space Gray Smartphone</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary-2">Add Keywords</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main-sec">
+        <div class="container-fluid wrapper">
+            <div class="main-sec-top">
+                <p class="main-title font-medium">Landing Page Editor</p>
+                <a href="#" class="title-video">
+                    <img src="images/video-player.png" class="mr-2" alt="">How to Video</a>
+            </div>
+            <div class="up-down" id="#myDIV">
+                <img src="images/big-arrow-up.png" alt="" class="center-arrow" >
+                <img src="images/big-arrow-down.png" alt="" class="center-arrow-down">
+                <div class="my-div">
+                    <div class="search-orange">
+                        <div class="pr dinit search-box">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" placeholder="Search by ASIN or Product Name" class="search-2" id="search-2">
+                        </div>
+                        <div class="countries">
+                            <img src="images/countries.png" alt="">
+                        </div>
+                    </div>
+                    <div class="scroll-vertical project-scroll-asas" data-mcs-theme="dark">
+                        <div class="row my-row ">
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                            <img src="images/analytic.png" alt="">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                            <img src="images/analytic.png" alt="">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                            <img src="images/analytic.png" alt="">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                            <img src="images/analytic.png" alt="">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                            <img src="images/analytic.png" alt="">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                            <img src="images/analytic.png" alt="">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-col">
+                                <div class="product-box">
+                                    <img src="images/asas.png" alt="">
+                                    <div class="product-box-2">
+                                        <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                            <a href="#" class="product-text">Testname</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-sm-between">
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                            <img src="images/trash.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="orange-table-max">
+                    <!--<div class="d-flex align-items-center justify-content-sm-between mb-2">-->
+                    <div class="row justify-content-between align-items-center mb-3">
+                        <div class="col-4">
+                            <div class="d-flex align-items-center">
+                                <div class="check-box position-relative">
+                                    <input type="checkbox" id="show-stack-box-6" name="all">
+                                    <label for="show-stack-box-6"><span class="check">
+                                                <i class="fas fa-check"></i></span>
+                                    </label>
+                                </div>
+                                <img src="images/trash-white.png" class="delete-icon-3">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="pr dinit search-box">
+                                <i class="fas fa-search search-icon-2"></i>
+                                <input type="text" placeholder="Search by ASIN or Product Name" class="search-3" id="search-3">
+                            </div>
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="bottom-orange">
+                                <a href="#" class="btn new-project btn-primary" data-toggle="modal" data-target="#exampleModal-2">Create New Project
+                                    <img src="images/add-white.png" alt="" class="add-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-vertical project-scroll-table-4" data-mcs-theme="dark">
+                    <div class="table-responsive">
+                        <div class="project-scroll-table-4">
+                            <table class="right-table">
+                                <tr class="table-top-2">
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Project Name</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Landing Page</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Your Link</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Tracking Code</th>
+                                    <th class="table-th-2"><img src="images/arrows.png" alt="" class="mr-2">Stats</th>
+                                </tr>
+                                <tr>
+                                    <td class="table-td-2">
+                                        <div class="check-box position-relative">
+                                            <input type="checkbox" id="show-stack-box-2" name="show">
+                                            <label for="show-stack-box-2" style="color: #3D3D3D;"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Pin Conversion</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-td-2">DollarShaveClub template
+                                        <img src="images/edit.png" style="cursor: pointer" alt="" data-toggle="modal" data-target="#exampleModal-4" class="mb-2">
+                                    </td>
+                                    <td class="table-td-2">
+                                        <a href="#">http://amzsale.ca/lp/247/Enigmaze-Secure-Password-Manager-Alphabetical</a>
+                                    </td>
+                                    <td class="table-td-2"><a href="#" data-toggle="modal" data-target="#exampleModal-3">Add</a></td>
+                                    <td class="table-td-2"><div class="kd-gray">20</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-td-2">
+                                        <div class="check-box position-relative">
+                                            <input type="checkbox" id="show-stack-box-3" name="show">
+                                            <label for="show-stack-box-3" style="color: #3D3D3D;"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Pin Conversion</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-td-2">DollarShaveClub template
+                                        <img src="images/edit.png" style="cursor: pointer" alt="" data-toggle="modal" data-target="#exampleModal-4" class="mb-2">
+                                    </td>
+                                    <td class="table-td-2">
+                                        <a href="#">http://amzsale.ca/lp/247/Enigmaze-Secure-Password-Manager-Alphabetical</a>
+                                    </td>
+                                    <td class="table-td-2"><a href="#" data-toggle="modal" data-target="#exampleModal-3">Add</a></td>
+                                    <td class="table-td-2"><div class="kd-gray">30</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-td-2">
+                                        <div class="check-box position-relative">
+                                            <input type="checkbox" id="show-stack-box-4" name="show">
+                                            <label for="show-stack-box-4" style="color: #3D3D3D;"><span href="#" class="check">
+                                            <i class="fas fa-check"></i></span> Pin Conversion</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-td-2">DollarShaveClub template
+                                        <img src="images/edit.png" style="cursor: pointer" alt="" data-toggle="modal" data-target="#exampleModal-4" class="mb-2">
+                                    </td>
+                                    <td class="table-td-2">
+                                        <a href="#">http://amzsale.ca/lp/247/Enigmaze-Secure-Password-Manager-Alphabetical</a>
+                                    </td>
+                                    <td class="table-td-2"><a href="#" data-toggle="modal" data-target="#exampleModal-3">Add</a></td>
+                                    <td class="table-td-2"><div class="kd-gray">5</div></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none">
+                <div class="month-ago">
+                    <p class="month-text">Created 2 months ago</p>
+                </div>
+                <div>
+                    <div class="row mb-4 bottom-section-2">
+                        <div class="col-6">
+                            <div class="pin-convers">
+                                <p class="pin-title">Pin Conversion</p>
+                                <ul class="pin-click">
+                                    <li class="click-text mr-5"><span class="mb-2 dib">7 </span><span class="d-block unique-click">Click</span></li>
+                                    <li class="click-text"><span class="mb-2 dib">4 </span><span class="d-block unique-click">Unique Click</span></li>
+                                </ul>
+                                <div class="share-on">
+                                    <p class="mr-4">Share on:</p>
+                                    <div>
+                                        <img src="images/facebook.png" alt="">
+                                        <img src="images/twitter.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="fs14">http://amzsale.ca/lp/247/Enigmaze-Secure-Password-Manager-Alphabetical</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="pin-convers">
+                                <img src="images/march.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/map.png" alt="" class="w-100 mb-4">
+                    <div class="row bottom-section-2">
+                        <div class="col-6">
+                            <div class="pin-convers">
+                                <div class="d-flex pin-operators">
+                                    <div class="d-flex align-items-center mr-5">
+                                        <div>
+                                            <p class="pin-title">Operating</p>
+                                            <img src="images/operating.png" alt="" class="mr-5">
+                                        </div>
+
+                                        <div class="d-block fs14 mt-3">
+                                            <div class="d-flex mb-4">
+                                                <div class="purple-res"></div><span>Windows 10</span>
+                                            </div>
+                                            <div class="d-flex mb-1">
+                                                <div class="black-res"></div><span>Mac OS X</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="blue-res"></div><span>Windows 7</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pin-browser">
+                                        <div>
+                                            <p class="pin-title">Browsers</p>
+                                            <img src="images/browser.png" alt="" class="mr-5">
+                                        </div>
+                                        <div class="d-block fs14 mt-3">
+                                            <div class="d-flex mb-4">
+                                                <div class="yellow-res"></div><span>Windows 10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="pin-convers">
+                                <div class="d-flex pin-operators">
+                                    <div class="d-flex align-items-center mr-5">
+                                        <div>
+                                            <p class="pin-title">Referrers</p>
+                                                <div class="d-flex mb-4">
+                                                    <p class="fs18 mr-4 direct-click">Direct, email and other(100%)</p>
+                                                    <div class="lblue-res">5</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="pin-title">Social Shares</p>
+                                            <p class="fs18 direct-click">No clicks from Facebook, Twitter or Google
+                                                <span class="d-block">Plus.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-copyright">
+            <p class="font-light text-center mb-0 footer-txt">Copyright 2019 - River Cleaner - the Amazon Listing Optimizer - All Rights Reserved</p>
+        </div>
+    </footer>
+</main>
+
+<div class="modal fade"  id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-regular" id="exampleModalLabel-2">Create a Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close.png" alt="">
+                        </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-box-2">
+                    <ul class="modal-text-2">
+                        <li class="modal-txt">Give Your Project a Name</li>
+                        <li>
+                            <div class="nav-item order-md-4 order-0 dropdown dropdown-5">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center select-class" href="#" data-toggle="dropdown">Domain
+                                    <span class="caret mr-5"></span>
+                                </a>
+                                <ul class="dropdown-menu drop">
+                                    <li class="drop-line">
+                                        <a href="#">~Domain~</a>
+                                    </li>
+                                    <li class="drop-line">
+                                        <a href="#">Amzsale.ca</a>
+                                    </li>
+                                    <li class="drop-line">
+                                        <a href="#">Dealazone.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer-2">
+                <button type="button" class="btn btn-primary-2">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title-2 font-regular" id="exampleModalLabel-3">Tracking Code</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close.png" alt="">
+                        </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-box">
+                    <p class="modal-text-3">Put tracking code, that could be fired once the link clicked, it can be Facebook Pixel code, Google Adwords Pixel code, or any custom script tag</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary-2">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade p-2" id="exampleModal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-4" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-regular" id="exampleModalLabel-4">Tracking Code</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close.png" alt="">
+                        </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-box">
+                    <p class="modal-text-4 active">All</p>
+                    <p class="modal-text-4 ">Product promotion</p>
+                    <p class="modal-text-4 ">Reviews builder</p>
+                    <p class="modal-text-4">Thank you pages</p>
+                </div>
+                <div class="row my-row row-modal mb-5">
+                    <div class="col-4"></div>
+                    <div class="col-4 text-center">
+                        <div class="pr dinit search-box">
+                            <i class="fas fa-search search-icon-2"></i>
+                            <input type="text" placeholder="Search by template name" class="search-3" id="search-4">
+                        </div>
+                    </div>
+                    <div class="col-4 text-right">
+                        <div class="orange-button ">
+                            <a href="#" class="btn new-template">Create Template
+                                <img src="images/add-white.png" alt="" class="add-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-row ">
+                    <div class="my-col">
+                        <div class="product-box">
+                            <img src="images/shave.png" alt="" class="mCS_img_loaded">
+                            <div class="product-box-2">
+                                <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                    <div>
+                                        <img src="images/left-copy.png" alt="">
+                                        <img src="images/trash-mini.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                    </div>
+                                    <img src="images/edit-gray.png" alt="" class="mCS_img_loaded">
+                                </div>
+                                <div class="blue-text">
+                                    <span class="product-txt">DollarShaveClub template</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                        <div class="product-box">
+                            <img src="images/shave.png" alt="" class="mCS_img_loaded">
+                            <div class="product-box-2">
+                                <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                    <div>
+                                        <img src="images/left-copy.png" alt="">
+                                        <img src="images/trash-mini.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                    </div>
+                                    <img src="images/edit-gray.png" alt="" class="mCS_img_loaded">
+                                </div>
+                                <div class="blue-text">
+                                    <span class="product-txt">DollarShaveClub template</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                        <div class="product-box">
+                            <img src="images/shave.png" alt="" class="mCS_img_loaded">
+                            <div class="product-box-2">
+                                <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                    <div>
+                                        <img src="images/left-copy.png" alt="">
+                                        <img src="images/trash-mini.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                    </div>
+                                    <img src="images/edit-gray.png" alt="" class="mCS_img_loaded">
+                                </div>
+                                <div class="blue-text">
+                                    <span class="product-txt">DollarShaveClub template</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                        <div class="product-box">
+                            <img src="images/shave.png" alt="" class="mCS_img_loaded">
+                            <div class="product-box-2">
+                                <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                    <div>
+                                        <img src="images/left-copy.png" alt="">
+                                        <img src="images/trash-mini.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                    </div>
+                                    <img src="images/edit-gray.png" alt="" class="mCS_img_loaded">
+                                </div>
+                                <div class="blue-text">
+                                    <span class="product-txt">DollarShaveClub template</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                        <div class="product-box">
+                            <img src="images/shave.png" alt="" class="mCS_img_loaded">
+                            <div class="product-box-2">
+                                <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                    <div>
+                                        <img src="images/left-copy.png" alt="">
+                                        <img src="images/trash-mini.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                    </div>
+                                    <img src="images/edit-gray.png" alt="" class="mCS_img_loaded">
+                                </div>
+                                <div class="blue-text">
+                                    <span class="product-txt">DollarShaveClub template</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                        <div class="product-box">
+                            <img src="images/shave.png" alt="" class="mCS_img_loaded">
+                            <div class="product-box-2">
+                                <div class="d-flex align-items-center justify-content-sm-between mb-2">
+                                    <div>
+                                        <img src="images/left-copy.png" alt="">
+                                        <img src="images/trash-mini.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                    </div>
+                                    <img src="images/edit-gray.png" alt="" class="mCS_img_loaded">
+                                </div>
+                                <div class="blue-text">
+                                    <span class="product-txt">DollarShaveClub template</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".scroll-vertical").mCustomScrollbar();
+
+        $(".center-arrow").click(function(){
+
+            $(".up-down").addClass("close-div");
+            $(".my-div").addClass("close-div");
+        });
+        $(".center-arrow-down").click(function(){
+
+            $(".up-down").removeClass("close-div");
+            $(".my-div").removeClass("close-div");
+        });
+    });
+</script>
+</body>
+</html>

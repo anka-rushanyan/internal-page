@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <title></title>
+    <link rel="shortcut icon" href="images/"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body class="internal home-page">
+    <header class="header">
+    <div class="container-fluid wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <h1 class="navbar-brand">
+                <a  href="#" class=" d-inline-block" title="jrnl">
+                    <img src="images/river-logo.png" alt="logo">
+                </a>
+            </h1>
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item order-md-0 order-4">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/analytics.png" alt="Icon" class="db m-auto">Orders Explorer
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/keyword.png" alt="Icon" class="db m-auto">Keyword Planner
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/settings.png" alt="Icon" class="db m-auto">Keyword Tool
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/tracker.png" alt="Icon" class="db m-auto">Keyword Tracker
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/landing.png" alt="Icon" class="db m-auto">Landing Page Editor
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/refund.png" alt="Icon" class="db m-auto">Refunds
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/coupon.png" alt="Icon" class="db m-auto">Coupon Distribution
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#">
+                            <span class="menu-list-icon">
+                                <img src="images/mail.png" alt="Icon" class="db m-auto">Email Followup
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-title dropdown-toggle fs-16 c-black font-semibold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Landing Page Editor</a>
+                            <a class="dropdown-item" href="#">Refunds</a>
+                            <a class="dropdown-item" href="#">Coupon Distribution</a>
+                            <a class="dropdown-item" href="#">Email Followup</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="line"></div>
+                    </li>
+                    <li class="nav-item order-md-4 order-0 dropdown-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Marine
+                            <span class="caret mr-1"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-line">
+                                <img src="images/dashboard.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Dashboard</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/users.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Users Profile</a>
+                            </li>
+                            <li class="dropdown-line">
+                                <img src="images/question.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Help</a>
+                            </li>
+                            <li class="drop-line"></li>
+                            <li class="dropdown-line">
+                                <img src="images/logout.png" alt="" class="mr-2">
+                                <a href="#" class="dropdown-text">Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+    <main class="main">
+        <section class="main-sec">
+            <div class="container-fluid wrapper">
+                <div class="main-sec-top">
+                    <p class="main-title font-medium">Member's Area Dashboard</p>
+                    <a href="#" class="title-video">
+                        <img src="images/video-player.png" class="mr-2" alt="">How to Video</a>
+                </div>
+                <div class="main-box">
+                    <h2 class="main-box-title font-light">1. Install the Chrome Extension</h2>
+                    <span class="main-text">Make sure you are using the <span style="color: #F58634;">Google Chrome Browser</span> before attempting to install</span>
+                    <ul class="list-inline list-unstyled text-center river-cleaner">
+                        <li class="list-inline-item buttons-li business-btns">
+                            <a href="#" class="btn btn-orange" data-toggle="modal" data-target="#exampleModal">Download River Cleaner</a>
+                        </li>
+                    </ul>
+                    <span class="main-text_2 font-medium">By downloading, you agree to our <span style="color: #F58634;">Terms of Use</span></span>
+                </div>
+            </div>
+        </section>
+        <section class="main-sec-2">
+            <div class="container-fluid wrapper">
+                <div class="main-box-2">
+                    <h2 class="main-box-black font-light">2. Select the Products to Work with</h2>
+                    <p class="main-txt">Takes up to 24h to update depending on the number of the product listings you have</p>
+                    <div class="main-box-3">
+                        <span class="main-txt-2 font-bold">Select your Marketplace</span>
+                        <div class="nav-item order-md-4 order-0 dropdown dropdown-2">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center united" href="#" data-toggle="dropdown">United States
+                                <span class="caret mr-1"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                                <li>
+                                    <a href="#">Text</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group pr">
+                        <div class="d-inline-block position-relative">
+                            <label for="search" class="search-label"><i class="fas fa-search search-icon"></i></label>
+                            <input type="text" value="Search" class="search" id="search">
+                        </div>
+                    </div>
+                    <div class="blue-box">
+                        <span>Selected <span class="blue-number">10 of 250</span></span>
+                        <div>
+                            <span><span class="blue-number">159 </span>Products Loaded</span>
+                        </div>
+                        <img src="images/usa.png" alt="">
+                        <img src="images/canada.png" alt="">
+                        <img src="images/britain.png" alt="">
+                        <img src="images/ger.png" alt="">
+                    </div>
+                    <div>
+                        <ul class="checkboxes">
+                            <li>
+                                <div class="check-box position-relative mb-4 mr-3">
+                                    <input type="checkbox" id="show-stack-box" name="show" >
+                                    <label for="show-stack-box"><span class="check">
+                                        <i class="fas fa-check"></i></span> Select All</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-box position-relative mb-4 mr-3">
+                                    <input type="checkbox" id="show-stack-box-2" name="show">
+                                    <label for="show-stack-box-2"><span class="check">
+                                        <i class="fas fa-check"></i></span> Deselect All</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check-box position-relative mb-4">
+                                    <input type="checkbox" id="show-stack-box-3" name="show">
+                                    <label for="show-stack-box-3"><span class="check">
+                                        <i class="fas fa-check"></i></span> Show Selected</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="position-relative">
+                        <div class="carousel-inner">
+                            <div class="row my-row">
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-col">
+                                    <div class="product-box">
+                                        <img src="images/asas.png" alt="">
+                                        <div class="product-box-2">
+                                            <a href="#" class="product-text">Aghjkkuytvghi-</a>
+                                            <span class="product-txt">B01IRTYLZ0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselPlus" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                    </span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselPlus" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                    </span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="switchers">
+                        <div class="switch-box">
+                            <p class="switcher">Negative Feedback</p>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                       <div class="switch-box">
+                           <p class="switcher">Negative Reviews</p>
+                           <label class="switch">
+                               <input type="checkbox" checked>
+                               <span class="slider round"></span>
+                           </label>
+                       </div>
+                        <div class="switch-box">
+                            <p class="switcher">Hijackers</p>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="switch-box">
+                            <p class="switcher">Suspended Listing</p>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="switch-box">
+                            <p class="switcher">Product Dimensions</p>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="switch-box">
+                            <p class="switcher">Category</p>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <footer>
+            <div class="footer-copyright">
+                <p class="font-light text-center mb-0 footer-txt">Copyright 2019 - River Cleaner - the Amazon Listing Optimizer - All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lorem Ipsum is simply dummy text of the printi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pr dinit search-box mb-3">
+                        <i class="fas fa-search search-icon-2"></i>
+                        <input type="text" placeholder="Search" class="search-3" id="search-3">
+                    </div>
+                    <div class="scroll-vertical project-scroll-table-modal" data-mcs-theme="dark">
+                        <div class="table-responsive">
+                                <table class="right-table">
+                                    <tr class="table-top-2">
+                                        <th class="table-th-2 font-medium">Product</th>
+                                        <th class="table-th-2 font-medium">Title</th>
+                                        <th class="table-th-2 font-medium">Asin</th>
+                                        <th class="table-th-2 font-medium">Price</th>
+                                        <th class="table-th-2"></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-red.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $123
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-td-2">
+                                            <img src="images/asas-mini-logo.png" alt="">
+                                        </td>
+                                        <td class="table-td-2">Aghjkkuytvghi</td>
+                                        <td class="table-td-2">B01IRTYLZ0</td>
+                                        <td class="table-td-2">
+                                            <div class="green-price">
+                                                $50
+                                            </div>
+                                        </td>
+                                        <td class="table-td-2">
+                                            <img src="images/trash-black.png" alt="">
+                                        </td>
+                                    </tr>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer-2">
+                    <button type="button" class="btn btn-primary-2">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".scroll-vertical").mCustomScrollbar();
+        });
+    </script>
+</body>
+</html>
+
